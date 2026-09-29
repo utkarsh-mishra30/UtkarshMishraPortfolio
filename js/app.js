@@ -36,7 +36,7 @@ const DATA = {
     email: "utkarsh30um@gmail.com",
     phone: "+91 9202855188",
     linkedin: "https://www.linkedin.com/in/utkarsh-mishra30",
-    leetcode: "https://leetcode.com/utkarsh30um/",
+    leetcode: "https://leetcode.com/u/utkarsh-30/",
   },
 
   /* --- Hero KPI tiles (top of the page) -------------------------------
