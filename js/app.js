@@ -171,7 +171,7 @@ const DATA = {
       role: "Analyst (Full Time)",
       period: "Dec 2025 – Present",
       location: "Bhopal, India",
-      sub: "Lumenore (AI driven analytics tool)",
+      sub: "Lumenore (AI-driven analytics tool)",
       bullets: [
         {
           keyword: "Global B2B analytics",
@@ -181,6 +181,10 @@ const DATA = {
           keyword: "Operational efficiency dashboard",
           text: "Designed and delivered an end-to-end operational efficiency dashboard for a BPO client, translating requirements into a KPI framework for tracking 100+ agents, consolidating 7 spreadsheets, and eliminating 2 hours of manual reporting per day.",
         },
+         {
+          keyword: "Healthcare analytics",
+          text: "Developed dashboards across 14 healthcare locations, consolidating 5+ revenue streams and physician scheduling metrics to enable faster analysis of operational performance.",
+        },
         {
           keyword: "Dashboard sustainment",
           text: "Managed and sustained CXM, workforce utilization, and agent performance dashboards for an entertainment sector client, handling data validation, data loading, routine health checks, and client change requests to ensure uninterrupted reporting.",
@@ -188,10 +192,6 @@ const DATA = {
         {
           keyword: "Business analysis ownership",
           text: "Act as primary BA for projects, managing requirement gathering, documentation, and stakeholder communication.",
-        },
-         {
-          keyword: "Healthcare analytics",
-          text: "Developed dashboards across 14 healthcare locations, consolidating 5+ revenue streams and physician scheduling metrics to enable faster analysis of operational performance.",
         },
       ],
       impacts: [
