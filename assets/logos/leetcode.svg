@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title">
+  <title id="title">LeetCode</title>
+  <path fill="#FFA116" d="M98 197 39 138c-15-15-15-39 0-54l59-59c9-9 23-9 32 0l14 14-73 73c-3 3-3 8 0 11l73 73-14 14c-9 9-23 9-32 0z"/>
+  <path fill="#B3B3B3" d="m128 88 48-48c9-9 23-9 32 0s9 23 0 32l-48 48-32-32z"/>
+  <path fill="#111827" d="M90 112h118c12 0 22 10 22 22s-10 22-22 22H90c-12 0-22-10-22-22s10-22 22-22z"/>
+  <path fill="#fff" d="M96 126h106c4 0 8 4 8 8s-4 8-8 8H96c-4 0-8-4-8-8s4-8 8-8z" opacity=".18"/>
+</svg>
