@@ -648,7 +648,7 @@ const DATA = {
     "Structured problem-solving under ambiguity",
     "Stakeholder management",
     "End-to-end ownership",
-    "Growth experimentation",
+    "Growth experiments",
     "P&L exposure",
   ],
 
@@ -656,16 +656,16 @@ const DATA = {
   certifications: [
     {
       title: "Leetcode SQL 50",
-      image: "certificates/Leetcode SQL 50.png",
+      image: "Certificates/Leetcode SQL 50.png",
     },
     {
       title: "Outskill GenAI Certificate",
-      image: "certificates/Outskill GenAI certificate.png",
+      image: "Certificates/Outskill GenAI certificate.png",
     },
     {
       title: "McKinsey Forward Certificate",
-      image: "certificates/McKinsey Forward Certificate.png",
-      thumbnail: "certificates/forward-badge.png",
+      image: "Certificates/McKinsey Forward Certificate.png",
+      thumbnail: "Certificates/forward-badge.png",
     },
   ],
 
