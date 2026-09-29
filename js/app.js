@@ -189,6 +189,10 @@ const DATA = {
           keyword: "Business analysis ownership",
           text: "Act as primary BA for projects, managing requirement gathering, documentation, and stakeholder communication.",
         },
+         {
+          keyword: "Healthcare analytics",
+          text: "Developed dashboards across 14 healthcare locations, consolidating 5+ revenue streams and physician scheduling metrics to enable faster analysis of operational performance.",
+        },
       ],
       impacts: [
         { display: "BA+DA", label: "Role coverage" },
