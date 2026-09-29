@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Utkarsh Mishra · Data Analyst Portfolio</title>
+    <meta
+      name="description"
+      content="Utkarsh Mishra — Data Analyst (ex-PwC). Supply chain, finance & operational analytics, BI dashboards, and data storytelling for global clients."
+    />
+
+    <!-- Inline SVG favicon (a small bar-chart glyph) -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b1020'/%3E%3Crect x='7' y='17' width='4' height='8' rx='1' fill='%2322d3ee'/%3E%3Crect x='14' y='11' width='4' height='14' rx='1' fill='%238b5cf6'/%3E%3Crect x='21' y='7' width='4' height='18' rx='1' fill='%2322d3ee'/%3E%3C/svg%3E"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Charts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <div class="loader-screen" id="loaderScreen" role="status" aria-live="polite">
+      <div class="loader-card">
+        <div class="loader-kicker">Initializing portfolio signal</div>
+        <div class="loader-chart" aria-hidden="true">
+          <span class="loader-particle loader-particle-1">SQL</span>
+          <span class="loader-particle loader-particle-2">KPI</span>
+          <span class="loader-particle loader-particle-3">BI</span>
+          <span class="loader-chart-base"></span>
+          <span class="loader-bar loader-bar-1"></span>
+          <span class="loader-bar loader-bar-2"></span>
+          <span class="loader-bar loader-bar-3"></span>
+          <span class="loader-bar loader-bar-4"></span>
+          <svg class="loader-trend" viewBox="0 0 180 90" preserveAspectRatio="none">
+            <path d="M8 74 C42 62, 62 68, 88 44 S132 20, 172 12" />
+          </svg>
+        </div>
+        <p>Loading Career Insights Dashboard.....</p>
+        <div class="loader-progress" aria-hidden="true"><span></span></div>
+      </div>
+    </div>
+
+    <!-- Animated background -->
+    <canvas id="bg" aria-hidden="true"></canvas>
+
+    <!-- ===================== NAV ===================== -->
+    <header id="nav" class="nav">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-dot" aria-label="Utkarsh Mishra">UM</span>
+      </a>
+      <input type="checkbox" id="navToggle" class="nav-toggle" hidden />
+      <label for="navToggle" class="nav-burger" aria-label="Menu"><span></span></label>
+      <nav class="nav-links">
+        <!-- Profile section hidden for now:
+        <a class="nav-link" href="#profile">Profile</a>
+        -->
+        <a class="nav-link" href="#fit">Strengths</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#journey">Journey</a>
+        <a class="nav-link" href="#work">Projects</a>
+        <a class="nav-link" href="#ventures">Side Hustles</a>
+        <a class="nav-link" href="#certifications">Certifications</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="btn btn-accent resume-link" href="Utkarsh_Mishra_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ===================== HERO ===================== -->
+      <section id="hero" class="hero">
+        <!-- EDIT: hero text comes from DATA.name / headline / tagline / location -->
+        <div class="hero-shell">
+          <div class="hero-inner">
+            <span class="eyebrow">Career Insights Dashboard</span>
+            <h1 id="heroName">Utkarsh Mishra</h1>
+            <p class="hero-headline" id="heroHeadline"></p>
+            <p class="hero-tagline" id="heroTagline"></p>
+            <!-- EDIT: hero KPI tiles come from DATA.heroKpis (years auto-updates) -->
+            <div class="kpi-grid" id="heroKpis"></div>
+            <div class="hero-action-row" aria-label="Primary actions">
+              <a class="btn btn-accent" href="#work">View My Work</a>
+              <a class="btn btn-ghost" href="#contact">Get in touch</a>
+              <a class="hero-icon-link" href="mailto:utkarsh30um@gmail.com" aria-label="Send email">
+                <img src="assets/logos/gmail.svg" alt="" loading="lazy" />
+              </a>
+              <a class="hero-icon-link" href="https://www.linkedin.com/in/utkarsh-mishra" target="_blank" rel="noopener" aria-label="Open LinkedIn profile">
+                <img src="assets/logos/linkedin.svg" alt="" loading="lazy" />
+              </a>
+            </div>
+          </div>
+
+          <aside class="hero-dashboard" aria-label="Career focus dashboard">
+            <div class="dash-card dash-card-main">
+              <span class="dash-label">Current operating lane</span>
+              <strong>Analytics × Strategy × BI Delivery</strong>
+              <p>Client-facing analytics, KPI design, dashboard delivery, and business problem structuring.</p>
+            </div>
+            <div class="dash-card">
+              <span class="dash-label">Target tracks</span>
+              <div class="dash-chips">
+                <span>Data Analytics</span>
+                <span>Consulting</span>
+                <span>Product Analytics</span>
+                <span>Strategy</span>
+              </div>
+            </div>
+            <!-- Test variant hidden for now: original Domain Map visual
+            <div class="dash-card">
+              <span class="dash-label">Domain map</span>
+              <div class="domain-bars">
+                <span style="--w: 92%">Supply Chain</span>
+                <span style="--w: 82%">Finance</span>
+                <span style="--w: 88%">Operations</span>
+                <span style="--w: 76%">CXM / Workforce</span>
+              </div>
+            </div>
+            -->
+            <div class="dash-card dash-card-hero-treemap">
+              <span class="dash-label">Industry exposure</span>
+              <div class="hero-industry-treemap" id="heroIndustryTreemap"></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!--
+      ===================== PROFILE HIDDEN FOR NOW =====================
+      <section id="profile" class="section">
+        <div class="section-head reveal">
+          <span class="section-tag">01 · Profile</span>
+          <h2>The analyst behind the dashboards</h2>
+        </div>
+        <div class="profile-grid">
+          <div class="card reveal">
+            <p class="profile-summary" id="profileSummary"></p>
+            <p class="profile-positioning" id="profilePositioning"></p>
+          </div>
+          <div class="card card-chart reveal">
+            <h3 class="card-title">Industry exposure</h3>
+            <div class="industry-treemap" id="industryTreemap"></div>
+          </div>
+        </div>
+      </section>
+      ===================== PROFILE HIDDEN FOR NOW =====================
+      -->
+
+      <!-- ===================== CONSULTING & PRODUCT FIT ===================== -->
+      <section id="fit" class="section">
+        <div class="section-head reveal">
+          <span class="section-tag">01 · How am I a good fit</span>
+          <h2>Built for structured, high-stakes problem solving</h2>
+        </div>
+        <!-- EDIT: DATA.fit -->
+        <div class="fit-grid" id="fitGrid"></div>
+      </section>
+
+      <!-- ===================== SKILLS ===================== -->
+      <section id="skills" class="section">
+        <div class="section-head reveal">
+          <span class="section-tag">02 · Skills</span>
+          <h2>The toolkit, visualized</h2>
+        </div>
+        <!-- EDIT: DATA.skills.tools -->
+        <div class="tool-grid reveal" id="toolGrid"></div>
+        <div class="skills-grid">
+          <div class="card card-chart reveal">
+            <h3 class="card-title">Capability radar</h3>
+            <div class="radar-chart"><canvas data-chart="skills-radar"></canvas></div>
+          </div>
+          <div class="card reveal">
+            <h3 class="card-title">Proficiency</h3>
+            <!-- EDIT: DATA.skills.bars -->
+            <div class="skill-bars" id="skillBars"></div>
+          </div>
+        </div>
+        <!-- EDIT: DATA.skills.additionalSkills -->
+        <div class="additional-skills reveal" id="additionalSkills"></div>
+      </section>
+
+      <!-- ===================== CAREER JOURNEY ===================== -->
+      <section id="journey" class="section">
+        <div class="section-head reveal">
+          <span class="section-tag">03 · Career Journey</span>
+        </div>
+        <div class="card card-chart journey-trend reveal">
+          <h3 class="card-title">Professional experience trend</h3>
+          <div class="trend-chart"><canvas data-chart="career-trend"></canvas></div>
+        </div>
+        <!-- EDIT: DATA.experience -->
+        <div class="timeline" id="timeline"></div>
+      </section>
+
+      <!-- ===================== PROJECTS AND DASHBOARDS ===================== -->
+      <section id="work" class="section">
+        <div class="section-head reveal">
+          <span class="section-tag">04 · Projects and Dashboards</span>
+          <h2>Projects and dashboards that moved business metrics</h2>
+          <p class="mobile-section-hint">(swipe horizontally to explore projects)</p>
+        </div>
+        <!-- EDIT: DATA.caseStudies -->
+        <div class="mobile-carousel-shell">
+          <button class="mobile-carousel-btn mobile-carousel-prev" type="button" data-carousel-target="#caseGrid" data-carousel-dir="-1" aria-label="Previous project">‹</button>
+          <div class="case-grid" id="caseGrid"></div>
+          <button class="mobile-carousel-btn mobile-carousel-next" type="button" data-carousel-target="#caseGrid" data-carousel-dir="1" aria-label="Next project">›</button>
+        </div>
+        <!-- EDIT: DATA.dashboardGallery -->
+        <div class="dashboard-gallery reveal" id="dashboardGallery"></div>
+      </section>
+
+      <!-- ===================== SIDE HUSTLES & COMMUNITY ===================== -->
+      <section id="ventures" class="section section-alt">
+        <div class="section-head reveal">
+          <span class="section-tag">05 · Side Hustles &amp; Extra Curricular</span>
+          <h2>Side hustle as case studies</h2>
+          <p class="mobile-section-hint">(swipe horizontally to read case studies)</p>
+        </div>
+        <!-- EDIT: DATA.ventures -->
+        <!-- Old side-hustle card layout preserved for rollback:
+        <div class="venture-grid" id="ventureGrid"></div>
+        -->
+        <!-- EDIT: DATA.ventures gallery/read-more preview layout -->
+        <div class="venture-compact-layout reveal" id="ventureCompactLayout">
+          <div class="mobile-carousel-shell">
+            <button class="mobile-carousel-btn mobile-carousel-prev" type="button" data-carousel-target="#ventureCompactGrid" data-carousel-dir="-1" aria-label="Previous side hustle">‹</button>
+            <div class="venture-compact-grid" id="ventureCompactGrid"></div>
+            <button class="mobile-carousel-btn mobile-carousel-next" type="button" data-carousel-target="#ventureCompactGrid" data-carousel-dir="1" aria-label="Next side hustle">›</button>
+          </div>
+          <aside class="venture-readmore-panel" id="ventureReadMorePanel" aria-live="polite"></aside>
+        </div>
+        <div class="transfer card reveal">
+          <h3 class="card-title">What these translate into</h3>
+          <!-- EDIT: DATA.venturesTransferable -->
+          <div class="transfer-list" id="transferList"></div>
+        </div>
+      </section>
+
+      <!-- ===================== ACHIEVEMENT AND CERTIFICATIONS ===================== -->
+      <section id="certifications" class="section">
+        <div class="section-head reveal">
+          <span class="section-tag">06 · Achievement and Certifications</span>
+          <h2>Achievement and Certifications</h2>
+          <p class="section-note">(click to view certificate)</p>
+        </div>
+        <!-- EDIT: DATA.certifications -->
+        <div class="cert-grid" id="certGrid"></div>
+      </section>
+
+      <!-- ===================== IMPACT BAND HIDDEN FOR NOW
+      <section id="impact" class="section">
+        <div class="section-head reveal">
+          <span class="section-tag">07 · Impact at a glance</span>
+          <h2>The 30-second skim</h2>
+        </div>
+        <div class="impact-band" id="impactBand"></div>
+      </section>
+      ===================== IMPACT BAND HIDDEN FOR NOW ===================== -->
+
+      <!-- ===================== CONTACT ===================== -->
+      <section id="contact" class="section">
+        <div class="section-head reveal">
+          <span class="section-tag">07 · Contact</span>
+          <h2>Let's build something measurable</h2>
+        </div>
+        <!-- EDIT: DATA.contact -->
+        <div class="contact-grid reveal" id="contactGrid"></div>
+        <div class="contact-cta reveal">
+          <a class="btn btn-accent" href="#hero">Back to Top</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="footerYear"></span> <span id="footerName"></span> · Built as a live BI dashboard.</p>
+    </footer>
+
+    <div class="cert-modal" id="certModal" aria-hidden="true">
+      <div class="cert-modal-backdrop" data-cert-close></div>
+      <div class="cert-modal-panel" role="dialog" aria-modal="true" aria-labelledby="certModalTitle">
+        <button class="cert-modal-close" type="button" data-cert-close aria-label="Close certificate preview">×</button>
+        <h3 id="certModalTitle"></h3>
+        <img id="certModalImage" src="" alt="" />
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
