@@ -486,7 +486,7 @@ const DATA = {
     },
     {
       title: "Workflow Management Dashboard",
-      image: "Dashboard Snippets/Workflow management Dashboard.png",
+      image: "Dashboard Snippets/Workflow Management Dashboard.png",
       alt: "Workflow management dashboard snippet",
     },
     {
